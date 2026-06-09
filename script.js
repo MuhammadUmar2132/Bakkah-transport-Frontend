@@ -21,39 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  /* ---------- fleet data ---------- */
-  const fleet = [
-    { brand: 'TOYOTA',   model: 'CAMRY',    persons: 4,  lug: 2  },
-    { brand: 'HYUNDAI',  model: 'SONATA',   persons: 4,  lug: 2  },
-    { brand: 'HYUNDAI',  model: 'STARIA',   persons: 7,  lug: 7  },
-    { brand: 'HYUNDAI',  model: 'H1',       persons: 7,  lug: 7  },
-    { brand: 'GMC',      model: 'YUKON XL', persons: 7,  lug: 7  },
-    { brand: 'TOYOTA',   model: 'HIACE',    persons: 12, lug: 12 },
-    { brand: 'TOYOTA',   model: 'COASTER',  persons: 15, lug: 25 },
-    { brand: 'KING LONG',model: 'BUS',      persons: 50, lug: 50 },
-  ];
-
-  // top circular thumbnails
-  document.getElementById('fleetThumbs').innerHTML = fleet.map(c => `
-    <div class="thumb">
-      <div class="t-name">${c.brand} ${c.model}</div>
-      <div class="circle imgph" data-label="${c.model}"></div>
-    </div>`).join('');
-
-  // big slider cards
-  document.getElementById('fleetSlider').innerHTML = fleet.map(c => `
-    <div class="car-card">
-      <h3>${c.brand}<br>${c.model}</h3>
-      <div class="blackdot"></div>
-      <div class="car-img imgph" data-label="${c.brand} ${c.model} picture"></div>
-      <a href="#" class="booknow">Book Now</a>
-    </div>`).join('');
-
-  // slider arrows
-  const slider = document.getElementById('fleetSlider');
-  const step = 364; // card width + gap
-  document.getElementById('nextBtn').addEventListener('click', () => slider.scrollBy({ left: step, behavior: 'smooth' }));
-  document.getElementById('prevBtn').addEventListener('click', () => slider.scrollBy({ left: -step, behavior: 'smooth' }));
 
   /* ---------- round trip packages ---------- */
   const pkgs = [
@@ -65,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('pkgGrid').innerHTML = pkgs.map(p => {
     const stops = p.stops.map((s, i) => `
       <div class="pkg-stop ${s[2]}"><div class="ic"></div>${s[0]}<br>${s[1]}</div>
-      ${i < p.stops.length - 1 ? '<span class="pkg-arrow">›</span>' : ''}`).join('');
+      ${i < p.stops.length - 1 ? '<span class="pkg-arrow">&gt;</span>' : ''}`).join('');
     return `
       <div class="pkg-card">
         <div class="pkg-stops">${stops}</div>
