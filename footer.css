@@ -1,0 +1,226 @@
+/* ===================== FOOTER ===================== */
+
+footer {
+  background: var(--green-foot);
+  color: #e9f3dd;
+  padding: 50px 0 0;
+  background-image: linear-gradient(135deg, var(--green-foot), var(--green-foot2))
+}
+
+.foot-top {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 40px;
+  align-items: center;
+  padding-bottom: 30px
+}
+
+.foot-brand .logo-ph {
+  margin-bottom: 18px
+}
+
+.foot-brand p {
+  color: #dcebcb;
+  font-size: 14px;
+  max-width: 380px
+}
+
+.foot-phone {
+  text-align: right
+}
+
+.big-phone {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(34px, 5vw, 64px);
+  color: #eef6e3;
+  letter-spacing: 2px;
+  display: block;
+  line-height: 1
+}
+
+.foot-phone .query {
+  margin-top: 8px;
+  color: #dcebcb;
+  font-size: 15px
+}
+
+.foot-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, .25)
+}
+
+.foot-cols {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  padding: 40px 0
+}
+
+.foot-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px
+}
+
+.foot-links h4,
+.foot-contact h4 {
+  font-family: var(--head);
+  font-weight: 600;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 18px
+}
+
+.foot-links a {
+  display: block;
+  color: #dcebcb;
+  font-size: 14px;
+  margin-bottom: 12px;
+  transition: .2s
+}
+
+.foot-links a:hover {
+  color: #fff;
+  padding-left: 4px
+}
+
+.foot-contact {
+  border-left: 1px solid rgba(255, 255, 255, .25);
+  padding-left: 40px
+}
+
+.foot-contact h3 {
+  font-family: var(--head);
+  font-weight: 500;
+  font-size: clamp(22px, 2.6vw, 34px);
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 24px
+}
+
+.foot-contact p {
+  color: #eef6e3;
+  font-size: 16px;
+  margin-bottom: 6px
+}
+
+.foot-social {
+  display: flex;
+  gap: 14px;
+  margin-top: 18px
+}
+
+.foot-social a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  transition: .2s
+}
+
+.foot-social a:hover {
+  background: #fff;
+  color: var(--green-foot)
+}
+
+.foot-bottom {
+  border-top: 1px solid rgba(255, 255, 255, .25);
+  padding: 18px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 13px;
+  color: #dcebcb
+}
+
+.fb-links {
+  display: flex;
+  gap: 20px
+}
+
+.fb-links a:hover {
+  color: #fff
+}
+
+/* ===================== WHATSAPP FLOAT ===================== */
+
+.wa-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: var(--wa);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, .4);
+  animation: pulse 2s infinite
+}
+
+.wa-float svg {
+  width: 30px;
+  height: 30px;
+  fill: #fff
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, .5)
+  }
+
+  70% {
+    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0)
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0)
+  }
+}
+
+/* ===================== FOOTER RESPONSIVE ===================== */
+
+@media(max-width:1024px) {
+  .foot-cols {
+    grid-template-columns: 1fr
+  }
+
+  .foot-contact {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, .25);
+    padding-top: 30px
+  }
+}
+
+@media(max-width:820px) {
+  .foot-top {
+    grid-template-columns: 1fr;
+    text-align: center
+  }
+
+  .foot-phone {
+    text-align: center
+  }
+}
+
+@media(max-width:560px) {
+  .foot-links {
+    grid-template-columns: 1fr
+  }
+
+  .foot-bottom {
+    flex-direction: column;
+    text-align: center
+  }
+}
