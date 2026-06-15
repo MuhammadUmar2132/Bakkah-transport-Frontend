@@ -1,0 +1,191 @@
+/* ===================== PICKUP SECTION ===================== */
+
+.pickup-section {
+  padding: 0 0 70px;
+}
+
+.pickup-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background: #1a1a1a;
+  /* border-radius: 20px; */
+  padding: 36px 50px;
+  align-items: stretch;
+}
+
+/* ---- Left Panel ---- */
+.pickup-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pickup-heading {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-style: normal;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 50px;
+  color: rgb(117, 231, 15);
+  text-transform: uppercase;
+}
+
+/* ---- Right Panel (green box inside black card) ---- */
+.pickup-right {
+  background: #2e5c10;
+  /* border-radius: 14px; */
+  padding: 10px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.included-heading {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-style: normal;
+  font-size: clamp(22px, 2.6vw, 50px);
+  font-weight: 500;
+  line-height: 1;
+  color: #ffffff;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* ---- Shared Text ---- */
+.pickup-text {
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(255, 255, 255);
+}
+
+/* ---- Bullet List ---- */
+.included-list {
+  list-style: disc;
+  padding-left: 20px;
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.included-list li {
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(255, 255, 255);
+}
+
+/* ===================== CITY TO CITY ROUTES ===================== */
+
+.routes-section {
+  padding: 0 0 70px;
+}
+
+.routes-card {
+  position: relative;
+  background: #000000 !important;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 48px 50px;
+}
+
+.routes-deco {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.routes-deco--left {
+  left: -60px;
+}
+
+.routes-deco--right {
+  right: -60px;
+}
+
+.routes-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+
+.routes-label {
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.routes-heading {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-style: normal;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  color: rgb(117, 231, 15);
+  text-transform: uppercase;
+}
+
+.routes-links {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.routes-link {
+  font-family: Manrope, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.2s;
+}
+
+.routes-link:hover {
+  color: rgb(117, 231, 15);
+}
+
+.routes-arrow {
+  color: rgb(117, 231, 15);
+  font-size: 18px;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 900px) {
+  .pickup-card {
+    grid-template-columns: 1fr;
+    padding: 40px 28px;
+    gap: 28px;
+  }
+
+  .pickup-heading {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .included-heading {
+    font-size: clamp(18px, 5vw, 34px);
+    line-height: 1;
+    white-space: nowrap;
+  }
+}

@@ -11,11 +11,16 @@
 
 <link rel="stylesheet" href="navbar.css">
 <link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="services.css">
+<link rel="stylesheet" href="fare-table.css">
+<link rel="stylesheet" href="Pickup.css">
+<link rel="stylesheet" href="OurFleet.css">
+<link rel="stylesheet" href="About.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ============ NAVBAR — navbar.html ============ -->
+<div id="navbar-placeholder"></div>
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="home">
@@ -544,7 +549,29 @@
   </div>
 </section>
 
-<!-- ============ FOOTER + WHATSAPP FLOAT — footer.html ============ -->
+<div id="footer-placeholder"></div>
+<div id="services-placeholder"></div>
+<div id="table-placeholder"></div>
+<div id="pickup-placeholder"></div>
+<div id="ourfleet-placeholder"></div>
+<div id="about-placeholder"></div>
+
+<script>
+  async function loadComponent(id, file) {
+    const res = await fetch(file);
+    const html = await res.text();
+    const el = document.getElementById(id);
+    el.insertAdjacentHTML('afterend', html);
+    el.remove();
+  }
+  loadComponent('navbar-placeholder', 'navbar.html');
+  loadComponent('footer-placeholder', 'footer.html');
+  loadComponent('services-placeholder', 'Services.html');
+  loadComponent('table-placeholder', 'TaxiServiceTable.html');
+  loadComponent('pickup-placeholder', 'Pickup.html');
+  loadComponent('ourfleet-placeholder', 'OurFleet.html');
+  loadComponent('about-placeholder', 'About1.html');
+</script>
 </body>
 </html>
 

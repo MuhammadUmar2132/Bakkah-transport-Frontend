@@ -1,0 +1,280 @@
+/* ===================== OUR FLEET ===================== */
+
+.fleet-section {
+  padding: 0 0 70px;
+}
+
+.fleet-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background: #e8e8e8;
+  border-radius: 16px;
+  padding: 40px 50px;
+  gap: 30px;
+  overflow: hidden;
+}
+
+/* ---- Left: Info ---- */
+.fleet-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fleet-title {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-style: normal;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #111111;
+}
+
+.fleet-model {
+  font-family: Manrope, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #111111;
+  font-style: italic;
+}
+
+.fleet-para {
+  font-family: Manrope, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #222222;
+}
+
+.fleet-link {
+  color: #c0392b;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.fleet-link:hover {
+  color: #922b21;
+}
+
+.fleet-meta {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 4px;
+}
+
+.fleet-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: Manrope, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #c0392b;
+}
+
+.fleet-meta-item svg {
+  color: #c0392b;
+  flex-shrink: 0;
+}
+
+/* ---- Right: Image ---- */
+.fleet-image-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.fleet-img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  object-fit: contain;
+  display: block !important;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 900px) {
+  .fleet-card {
+    grid-template-columns: 1fr;
+    padding: 32px 24px;
+    gap: 24px;
+  }
+
+  .fleet-title {
+    font-size: 34px;
+  }
+
+  .fleet-image-wrap {
+    justify-content: center;
+  }
+
+  .fleet-img {
+    max-width: 100%;
+  }
+}
+
+/* ===================== YE RATES HAIN ===================== */
+
+.fleet-rates-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.fleet-rates-card {
+  background: #e8e8e8;
+  border-radius: 16px;
+  padding: 32px 36px;
+  border: 1px solid #000000;
+}
+
+.fleet-rates-title {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 40px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fleet-rates-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.fleet-rate-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  min-height: 48px;
+  padding: 10px 14px;
+  margin: 0 -36px;
+  font-family: Manrope, sans-serif;
+  box-sizing: border-box;
+}
+
+.fleet-rate-row:nth-child(odd) {
+  background: #f2f2f2;
+}
+
+.fleet-rate-row:nth-child(even) {
+  background: #e0e0e0;
+}
+
+.fleet-rate-route {
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+}
+
+.fleet-rate-price {
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+/* //zayarat ke idr apply krne hain */
+
+.fleet-rate-price span {
+  font-size: 15px;
+  font-weight: 400;
+  color: #222222;
+}
+
+.fleet-rate-price span::after {
+  content: ' SAR';
+}
+
+@media (max-width: 900px) {
+  .fleet-rates-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fleet-rates-card {
+    padding: 24px 20px;
+  }
+}
+
+/* ===================== RoundTrip with ===================== */
+
+.roundtrip-card {
+  background: #e8e8e8;
+  border-radius: 16px;
+  border: 1px solid #000000;
+  margin-top: 24px;
+  padding: 32px 36px;
+}
+
+.roundtrip-title {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #111111;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.roundtrip-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.roundtrip-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ffffff;
+  margin: 0 -36px;
+  padding-left: 36px;
+  padding-right: 36px;
+  font-family: Manrope, sans-serif;
+}
+
+.roundtrip-row:last-child {
+  border-bottom: none;
+}
+
+.roundtrip-route {
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+}
+
+.roundtrip-price {
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .roundtrip-card {
+    padding: 24px 20px;
+  }
+
+  .roundtrip-row {
+    margin: 0 -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
