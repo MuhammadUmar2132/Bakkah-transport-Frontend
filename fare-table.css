@@ -78,3 +78,57 @@
 .fare-table tbody td:last-child {
   border-right: none;
 }
+
+/* ---- Sticky first column (Vehicle) ---- */
+.fare-table thead th:first-child,
+.fare-table tbody td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background: #ffffff;
+}
+
+.fare-table thead th:first-child {
+  background: #111111;
+  z-index: 3;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .fare-table-title {
+    font-size: 22px;
+  }
+
+  .fare-table {
+    min-width: 600px;
+  }
+
+  .fare-table thead th {
+    font-size: 13px;
+    padding: 10px 12px;
+    line-height: 1.3;
+  }
+
+  .fare-table tbody td {
+    font-size: 12px;
+    padding: 9px 12px;
+    line-height: 1.4;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .fare-table {
+    min-width: 560px;
+  }
+
+  .fare-table thead th {
+    font-size: 11px;
+    padding: 8px 8px;
+  }
+
+  .fare-table tbody td {
+    font-size: 11px;
+    padding: 8px 8px;
+  }
+}
