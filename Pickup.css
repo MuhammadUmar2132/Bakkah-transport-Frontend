@@ -176,16 +176,108 @@
     grid-template-columns: 1fr;
     padding: 40px 28px;
     gap: 28px;
+    border-radius: 20px;
+  }
+
+  .pickup-right {
+    border-radius: 14px;
   }
 
   .pickup-heading {
     font-size: 34px;
     line-height: 40px;
+    text-align: center;
   }
 
   .included-heading {
-    font-size: clamp(18px, 5vw, 34px);
-    line-height: 1;
-    white-space: nowrap;
+    font-size: 28px;
+    line-height: 1.1;
+    white-space: normal;
+  }
+}
+
+@media (max-width: 480px) {
+  .pickup-section {
+    padding: 0 0 40px;
+  }
+
+  .pickup-card {
+    padding: 28px 18px;
+    gap: 0;
+    border-radius: 16px;
+  }
+
+  .pickup-right {
+    border-radius: 12px;
+  }
+
+  .pickup-left {
+    gap: 14px;
+    padding-bottom: 28px;
+  }
+
+  .pickup-heading {
+    font-size: 26px;
+    line-height: 1.1;
+    text-align: center;
+  }
+
+  .pickup-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .pickup-right {
+    padding: 18px 18px;
+    gap: 10px;
+  }
+
+  .included-heading {
+    font-size: 22px;
+    line-height: 1.1;
+    white-space: normal;
+  }
+
+  .included-list {
+    gap: 4px;
+  }
+
+  .included-list li {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .routes-section {
+    padding: 0 0 40px;
+  }
+
+  .routes-section .container {
+    padding: 0;
+  }
+
+  .routes-card {
+    padding: 24px 20px;
+    border-radius: 0;
+  }
+
+  .routes-heading {
+    font-size: 28px;
+    line-height: 1.1;
+    text-align: center;
+  }
+
+  .routes-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .routes-link {
+    font-size: 15px;
+    justify-content: center;
+  }
+
+  .routes-link {
+    font-size: 15px;
   }
 }

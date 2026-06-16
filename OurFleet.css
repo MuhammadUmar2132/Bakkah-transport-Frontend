@@ -115,6 +115,46 @@
   }
 }
 
+@media (max-width: 480px) {
+  .fleet-section {
+    padding: 0 0 40px;
+  }
+
+  .fleet-card {
+    padding: 24px 16px;
+    gap: 16px;
+    border-radius: 12px;
+  }
+
+  .fleet-title {
+    font-size: 26px;
+    line-height: 1.1;
+  }
+
+  .fleet-model {
+    font-size: 14px;
+  }
+
+  .fleet-para {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .fleet-meta {
+    gap: 16px;
+  }
+
+  .fleet-meta-item {
+    font-size: 12px;
+  }
+}
+
+/* ===================== RATES COMBINED SECTION ===================== */
+
+.rates-combined-section {
+  padding: 0 0 30px;
+}
+
 /* ===================== YE RATES HAIN ===================== */
 
 .fleet-rates-grid {
@@ -127,7 +167,7 @@
 .fleet-rates-card {
   background: #e8e8e8;
   border-radius: 16px;
-  padding: 32px 36px;
+  padding: 24px 36px;
   border: 1px solid #000000;
 }
 
@@ -135,11 +175,11 @@
   font-family: "Big Shoulders Display", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 32px;
+  line-height: 1.1;
   color: rgb(0, 0, 0);
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 .fleet-rates-list {
@@ -152,19 +192,21 @@
   justify-content: space-between;
   align-items: center;
   gap: 12px;
-  min-height: 48px;
-  padding: 10px 14px;
+  min-height: 36px;
+  padding: 6px 14px;
   margin: 0 -36px;
   font-family: Manrope, sans-serif;
   box-sizing: border-box;
+  background: #E8E8E8;
+  border-bottom: 1px solid #ffffff;
 }
 
 .fleet-rate-row:nth-child(odd) {
-  background: #f2f2f2;
+  background: #E8E8E8;
 }
 
 .fleet-rate-row:nth-child(even) {
-  background: #e0e0e0;
+  background: #E8E8E8;
 }
 
 .fleet-rate-route {
@@ -204,6 +246,40 @@
 
   .fleet-rates-card {
     padding: 24px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fleet-rates-grid {
+    gap: 16px;
+    margin-top: 16px;
+  }
+
+  .fleet-rates-card {
+    padding: 20px 16px;
+    border-radius: 12px;
+  }
+
+  .fleet-rates-title {
+    font-size: 22px;
+    line-height: 1.1;
+    margin-bottom: 12px;
+  }
+
+  .fleet-rate-row {
+    margin: 0 -16px;
+    padding: 8px 16px;
+    min-height: 36px;
+  }
+
+  .fleet-rate-route {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .fleet-rate-price {
+    font-size: 13px;
+    line-height: 18px;
   }
 }
 
@@ -276,5 +352,39 @@
     margin: 0 -20px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .roundtrip-card {
+    padding: 20px 16px;
+    border-radius: 12px;
+    margin-top: 16px;
+  }
+
+  .roundtrip-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .roundtrip-row {
+    margin: 0 -16px;
+    padding: 10px 16px;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .roundtrip-route {
+    font-size: 13px;
+    line-height: 18px;
+    white-space: normal;
+    flex: 1;
+  }
+
+  .roundtrip-price {
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
   }
 }
